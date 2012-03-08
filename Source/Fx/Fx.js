@@ -47,7 +47,7 @@ var Fx = this.Fx = new Class({
 
 	step: function(now){
 		if (this.options.frameSkip){
-			var diff = (this.time != null) ? (now - this.time) : 0, frames = diff / this.frameInterval;
+			var diff = (this.time !== null) ? (now - this.time) : 0, frames = diff / this.frameInterval;
 			this.time = now;
 			this.frame += frames;
 		} else {
